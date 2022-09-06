@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Hotel project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap5/css/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+    <div class="super_container">
+
+        <header class="header">
+
+
+
+
+
+            <!-- nav bar -->
+
+            <div class="bg-dark" style="height: 60px;">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                            
+                        <div class="logo mt-2">
+                            <a href="home.html"><img src="images/hotbym-logo.png" alt="" ></a>
+                        </div>
+                            
+                        <div class="d-flex mt-3">
+                            <a href="#" class="text-white fs-6 fw-light px-3">Login</a>
+                            <a href="#" class="text-white fs-6 fw-light px-3">View bookings</a>
+                        </div>
+    
+                    </div>
+                </div>		
+            </div>
+
+        </header>
+      
+        
+
+
+
+        <!-- HERO SECTION -->
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div id="slide-1" class="slide carousel-item active">
+                    <div class="slide-content">
+                        <h1> Slide 1</h1>
+                        <br><br>
+                    </div>
+                </div>
+                <div id="slide-2" class="slide carousel-item">
+                    <div class="slide-content">
+                        <h1> Slide 2</h1>
+                    </div>
+                </div>
+                <div id="slide-3" class="slide carousel-item">
+                    <div class="slide-content">
+                        <h1> Slide 3</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+
+
+
+
+
+        <!-- TAB / TOGGLE SECTION  -->
+        <div class="container" style="margin-top: -250px;">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active btn px-5 py-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Hourly</button>
+                    <button class="nav-link btn px-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Daily</button>
+                </div>
+            </nav>
+            <div class="tab-content bg-white p-4" id="nav-tabContent">
+
+
+
+                <!-- HOURLY TAB   -->
+
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                   <div class="search_panel active">
+                        <form action="#" id="search_form_1" class="search_panel_content">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="text-danger fw-bold">DESTINATIONS</label>
+                                    <input type="text" class="form-control my-2 form-text"  placeholder="Destination..." required="required">
+                                </div>
+                                <div class="col">
+                                    <label class="text-danger fw-bold">CHECK IN</label>
+                                    <input type="datetime-local" class="form-control my-2 form-text" />
+                                </div>
+                                <div class="col">
+                                    <label class="text-danger fw-bold">CHECK OUT</label>
+                                    <input type="datetime-local" class="form-control my-2 form-text" />
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="text-danger fw-bold">ADULTS</label>
+                                    <select name="adults" title="adults"  class="form-control my-2 form-text">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="text-danger fw-bold">CHILDREN</label>
+                                    <select name="children" title="children" class="form-control my-2 form-text">
+                                        <option>0</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                    </select>
+                                </div>
+                                <div class="col pt-3" align="center" >
+                                    <button type="submit" class="btn btn-danger btn-lg px-5 rounded-pill"><span class="fw-bolder fs-6">SEARCH</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+                <!-- DAILY TAB   -->
+
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    
+
+
+                    <div class="search_panel active">
+                        <form action="#" id="search_form_1" class="search_panel_content">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="text-danger fw-bold">DESTINATIONS</label>
+                                    <input type="text" class="form-control my-2 form-text"  placeholder="Destination..." required="required">
+                                </div>
+                                <div class="col">
+                                    <label class="text-danger fw-bold">CHECK IN</label>
+                                    <input type="date" class="form-control my-2 form-text" />
+                                </div>
+                                <div class="col">
+                                    <label class="text-danger fw-bold">CHECK OUT</label>
+                                    <input type="date" class="form-control my-2 form-text" />
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="text-danger fw-bold">ADULTS</label>
+                                    <select name="adults" title="adults"  class="form-control my-2 form-text">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="text-danger fw-bold">CHILDREN</label>
+                                    <select name="children" title="children" class="form-control my-2 form-text">
+                                        <option>0</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                    </select>
+                                </div>
+                                <div class="col pt-3" align="center" >
+                                    <button type="submit" class="btn btn-danger btn-lg px-5 rounded-pill"><span class="fw-bolder fs-6">SEARCH</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB / TOGGLE SECTION END -->
+
+
+
+
+
+        <!-- POPULAR HOTELS SECTION {CAROUSEL} -->
+        
+        <div class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col pb-3">
+                        <h2 class="intro_title text-center mt-5">Popular Hotels</h2>
+                        <p class="text-center">Something going on here.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-1.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Lorem Ipsum</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$60</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark"> Card's content.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-2.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Hotel de rioe</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$90</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">Some quick example</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-3.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Title Here</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$200</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">Some quick example text</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-4.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Hotel de Maria</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$700</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">Some quick example text.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- CHEAPEST HOTELS SECTION {CAROUSEL} -->
+        
+        <div class="intro bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col pb-3">
+                        <h2 class="intro_title text-center mt-5">Cheapest Hotels</h2>
+                        <p class="text-center">Something going on here.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-5.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Title Here</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$28</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">Some quick example text to build </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-6.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Masia Hotel</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$890</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">Some quick example</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-7.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3>Title Here</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$750</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">The card's content.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border card-curves" style="width: 18rem;">
+                            <img src="images/card-8.jpg" class="card-curves-top card-img">
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h3 class="text-dark fs-4">Wooh Hotel</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="text-danger fw-bolder">$705</h3>
+                                </div>
+                            </div>
+                              <p class="card-text text-dark">To build on the card title </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                
+
+            </div>
+        </div>
+
+
+
+    
+
+
+
+
+
+        <!-- CTA section -->
+
+        <div class="cta">
+            <!-- Image by https://unsplash.com/@thanni -->
+            <div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+            
+            <div class="intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col pb-3">
+                            <h2 class="intro_title text-center mt-5">Short stay offers</h2>
+                            <br><br><br>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+    
+                        <div class="col-md-3">
+    
+                            <div class="card border card-curves" style="width: 18rem;">
+                                <img src="images/card-9.jpg" class="card-curves-top card-img">
+                                <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h3 class="text-dark fs-4">Mia Hotel</h3>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="text-danger fw-bolder">$86</h3>
+                                    </div>
+                                </div>
+                                  <p class="card-text text-dark">Son the card title and make up.</p>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-md-3">
+    
+                            <div class="card border card-curves" style="width: 18rem;">
+                                <img src="images/card-10.jpg" class="card-curves-top card-img">
+                                <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h3 class="text-dark fs-4">Espana Hotel</h3>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="text-danger fw-bolder">$45</h3>
+                                    </div>
+                                </div>
+                                  <p class="card-text text-dark">Make up the bulk of the card.</p>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-md-3">
+    
+                            <div class="card border card-curves" style="width: 18rem;">
+                                <img src="images/card-1.jpg" class="card-curves-top card-img">
+                                <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h3 class="text-dark fs-4">Hotel de Paris</h3>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="text-danger fw-bolder">$23</h3>
+                                    </div>
+                                </div>
+                                  <p class="card-text text-dark">Bulk of the card's content.</p>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-md-3">
+    
+                            <div class="card border card-curves" style="width: 18rem;">
+                                <img src="images/card-4.jpg" class="card-curves-top card-img">
+                                <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h3 class="text-dark fs-4">Hotel Naahh</h3>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="text-danger fw-bolder">$15</h3>
+                                    </div>
+                                </div>
+                                  <p class="card-text text-dark">On the card title</p>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+    
+                    </div>
+                    
+    
+                </div>
+            </div>
+
+            </div>
+                        
+        </div>
+
+
+
+
+
+        <!-- Featured rooms based -->
+
+        <div class="intro">
+            <div class="container">
+                
+                    <h2 class="intro_title text-center mt-5">Top Destination</h2>
+                    <p class="text-center">Something going on here.</p>
+                
+                <div class="row intro_items">
+
+                    
+                    <!-- Intro Item  1 L1 -->
+
+                    
+                    <div class="col-lg-4 intro_col">
+                        <div class="intro_item">
+                            <div class="intro_item_overlay"></div>
+                            <!-- Image by https://unsplash.com/@hellolightbulb -->
+                            <div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Intro Item 2 L1 -->
+
+                    <div class="col-lg-4 intro_col">
+                        <div class="intro_item">
+                            <div class="intro_item_overlay"></div>
+                            <!-- Image by https://unsplash.com/@hellolightbulb -->
+                            <div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Intro Item 3 L1 -->
+
+                    <div class="col-lg-4 intro_col">
+                        <div class="intro_item">
+                            <div class="intro_item_overlay"></div>
+                            <!-- Image by https://unsplash.com/@willianjusten -->
+                            <div class="intro_item_background" style="background-image:url(images/intro_3.jpg)"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- CTA 2 section  -->
+
+        <div class="cta add-padding">
+
+            <div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img_style"><a href="#"><img src="/images/room_1.jpg" alt="" ></a></div>
+                    </div>
+        
+                    <div class="col-lg-8">
+                        <h1 class="intro_title" id="color-txt-white" style="font-weight: 800; padding-top: 30px;">Register now to get our best offers</h1>        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+
+
+        <!-- quick access -->
+        <div class="quick-access">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5 class="quick-access-title">Top Short Stay</h5>
+                        <ul>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="quick-access-title">Hotels by the hour near</h5>
+                        <ul>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="quick-access-title">Top Short Stay Destinations</h5>
+                        <ul>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                            <li class="quick-access-text"> <a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Column -->
+                    <div class="col-lg-3 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_content footer_about">
+                                <div class="logo_container footer_logo">
+                                    <div class="logo footer-width"><a href="#"><img src="images/hotbym-logo.png" alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column -->
+                    <div class="col-lg-3 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_title">blog posts</div>
+                            <ul class="footer-list"><a href="about.html">About us</a></ul>
+                            <ul class="footer-list"><a href="contact.html">Contact</a></ul>
+                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
+                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer Column -->
+                    <div class="col-lg-3 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_title">Tags</div>
+                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
+                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
+                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
+                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
+                        </div>
+                    </div>
+
+                    <!-- Footer contact column -->
+                    <div class="col-lg-3 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_title">contact info</div>
+                            <div class="footer_content footer_contact">
+                                <ul class="contact_info_list">
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+                                        <div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
+                                    </li>
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+                                        <div class="contact_info_text">2556-808-8613</div>
+                                    </li>
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+                                        <div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+                                    </li>
+                                    <li class="contact_info_item d-flex flex-row">
+                                        <div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+                                        <div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+	    <!-- Copyright -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright_content align-items-center">
+                    <div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="styles/bootstrap5/js/bootstrap.min.js"></script>
+</body>
+</html>
