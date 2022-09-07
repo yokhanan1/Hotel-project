@@ -5,33 +5,17 @@
 
 [Table of Contents]
 
-1. Fonts
-2. Body and some general stuff
-3. Header
-	3.1 Top Bar
-	3.2 Logo
-	3.3 Main Nav
-	3.4 Menu
-4. Home
-	4.1 Home Slider
-	4.2 Home Slider Nav
-	4.3 Home Slider Dots
-5. Search
-6. Section Title
-7. Intro
-8. CTA
-	8.1 CTA Slider
-9. Offers
-10. Testimonials
-	10.1 Testimonials Slider
-11. Trending
-12. Contact
-13. Footer
-	13.1 Footer - About
-	13.2 Footer - Blog
-	13.3 Footer - Tags
-	13.4 Footer - Contact Info
-14. Copyright
+1.	Fonts
+2.	Body and some general stuff
+3.	Header
+	3.1 Logos
+4.	Hero section (Slider)
+5.	Top Destination SECTION (SLIDER-CAROUSEL)
+6.	CTA
+7. Footer
+	7.1 Footer - About
+	7.2 Footer - contact Info
+8. Copyright
 
 
 ******************************/
@@ -332,7 +316,7 @@ h1, h2, h3, h4, h5, h6
 }
 
 /*********************************
-3.2 Logo
+3.1 Logo
 *********************************/
 
 .logo a
@@ -355,16 +339,12 @@ h1, h2, h3, h4, h5, h6
 	-o-transform: translateY(2px);
 	transform: translateY(2px);
 }
-.footer-width a img
-{
-	width: 150px;
-}
 
 
 
 
 /*********************************
-4.1 Hero section (Slider)
+4 Hero section (Slider)
 *********************************/
 
 #slide-1
@@ -403,7 +383,7 @@ h1, h2, h3, h4, h5, h6
 
 
 /* /* ********************************
-8. 	Top Destination SECTION (SLIDER-CAROUSEL)
+5.	Top Destination SECTION (SLIDER-CAROUSEL)
 ******************************** */
 
 #news-slider{
@@ -465,8 +445,9 @@ h1, h2, h3, h4, h5, h6
 
 
 
+
 /*********************************
-8. CTA
+6. CTA
 *********************************/
 
 .cta
@@ -488,7 +469,7 @@ h1, h2, h3, h4, h5, h6
 
 
 /*********************************
-13. Footer
+7. Footer
 *********************************/
 
 .footer
@@ -502,11 +483,14 @@ h1, h2, h3, h4, h5, h6
 {
 	color: white;
 }
-
+.footer-width a img
+{
+	width: 150px;
+}
 
 
 /*********************************
-13.1 Footer - About
+7.1 Footer - About
 *********************************/
 
 .footer_about
@@ -528,7 +512,7 @@ h1, h2, h3, h4, h5, h6
 
 
 /*********************************
-13.4 Footer - Contact Info
+7.2 Footer - Contact Info
 *********************************/
 
 .contact_info_icon
@@ -558,7 +542,7 @@ h1, h2, h3, h4, h5, h6
 
 
 /*********************************
-14. Copyright
+8. Copyright
 *********************************/
 
 .copyright
