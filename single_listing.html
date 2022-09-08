@@ -24,19 +24,19 @@
 
             <!-- nav bar -->
 
-            <div class="top_bar">
+            <div class="bg-dark" style="height: 60px;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col d-flex flex-row">
-                            <div class="logo_container">
-                                <div class="logo"><a href="home.html"><img src="images/hotbym-logo.png" alt="" ></a></div>
-                            </div>
+                    <div class="d-flex justify-content-between">
                             
-                            <div class="user_box ml-auto">
-                                <div class="user_box_login user_box_link"><a href="#">login</a></div>
-                                <div class="user_box_view_bookings user_box_link"><a href="#">View bookings</a></div>
-                            </div>
+                        <div class="logo mt-2">
+                            <a href="home.html"><img src="images/hotbym-logo.png" alt="" ></a>
                         </div>
+                            
+                        <div class="d-flex mt-3">
+                            <a href="#" class="text-white fs-6 fw-light px-3">Login</a>
+                            <a href="#" class="text-white fs-6 fw-light px-3">View bookings</a>
+                        </div>
+    
                     </div>
                 </div>		
             </div>
@@ -47,24 +47,10 @@
 
 
 
-        <!-- BANNER SECTION -->
-
-        <!-- <div class="home">
-            <div class="overlay"></div>
-            <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact_background.jpg"></div>
-            <div class="home_content">
-                <div class="home_title">Offers</div>
-            </div>
-        </div> -->
-
-
-
-
-
         <!-- Single Listing -->
 
-		<div class="container-fluid" style="margin-top: 80px; padding: 0px 120px;">
-			<div class="row">
+		<div class="container-fluid single-listing">
+			<div class="row gx-5">
 
 				<!-- main content -->
 				<div class="col-md-8">
@@ -73,7 +59,7 @@
 					<div class="image-grid">
 
 						<div class="row">
-							<!-- first two images -->
+							<!-- first set of images -->
 							<div class="col-md-6 p-1">
 								<img src="images/listing_hotel.jpg" class="img-fluid">
 							</div>
@@ -94,25 +80,28 @@
 
 					</div>
 
+
 					<!-- title section -->
 
-					<div class="hotel_title_container p-2">
-						<div class="hotel_title_content">
-							<h1 class="hotel_title">Grand Hotel Eurostar</h1>
-							<div class="row">
-								<div class="rating_r rating_r_4 hotel_rating col">
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-								</div>
-								<div class="col-md-8" align="right"><i class="fa fa-map-marker text-danger"></i> 677 Gran Via Street, no 34, Madrid, Spain.</div>
+					<div class="title-section p-2">
+						<h2 class="text-dark pt-4 fw-bold">Grand Hotel Eurostar</h2>
+						<div class="row">
+							<div class="col py-1">
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
 							</div>
+							<div class="col-md-8 text-dark" align="right"><i class="fa fa-map-marker fa-lg text-danger"></i>&nbsp;&nbsp; 677 Gran Via Street, no 34, Madrid, Spain.</div>
 						</div>
 					</div>
 
+
+
 					<!-- tabs and sections -->
+					
+					<!-- OVERVIEW TAB  -->
 
 					<nav>
 						<div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -124,556 +113,184 @@
 					<div class="tab-content" id="nav-tabContent">
 						<div class="tab-pane fade show active px-5" id="nav-room" role="tabpanel" aria-labelledby="nav-rooms-tab">
 
-							<div class="rooms">
 
-								<!-- Room -->
-								<div class="room">
-	
-									<!-- Room -->
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="room_image"><img src="images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
-										</div>
-										<div class="col-lg-7">
-											<div class="room_content">
-												<div class="room_title">Double or Twin Room</div>
-												<div class="room_price">$99/night</div>
-												<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-												<div class="room_extra">Breakfast $7.50</div>
-											</div>
-										</div>
-										<div class="col-lg-3 text-lg-right">
-											<div class="room_button">
-												<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-											</div>
-										</div>
-									</div>	
-								</div>
+							<!-- ROOM SELECT OPTION 1  -->
 
-								<hr />
-	
-								<!-- Room -->
-								<div class="room pt-3">
-	
-									<!-- Room -->
-									<div class="row">
-										<div class="col-lg-2">
-											<div class="room_image"><img src="images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
-										</div>
-										<div class="col-lg-7">
-											<div class="room_content">
-												<div class="room_title">Double or Twin Room</div>
-												<div class="room_price">$99/night</div>
-												<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-												<div class="room_extra">Breakfast $7.50</div>
-											</div>
-										</div>
-										<div class="col-lg-3 text-lg-right">
-											<div class="room_button">
-												<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-											</div>
-										</div>
-									</div>	
+							<div class="row my-5 gx-0">
+								<div class="col-md-4">
+									<img src="images/room-5.jpg" alt="https://unsplash.com/@grovemade" class="img-fluid rounded-start">
 								</div>
-	
+								<div class="col-md-8 p-4 shadow-sm mb-5 room-content">
+									<div class="row">
+										<div class="col-md-9 rounded-end">
+											<p class="h3 text-secondary fw-bold">Double or Twin Room</p>
+										</div>
+										<div class="col-md-3">
+										<div class="text-danger fw-bold pt-1 h2" align="right"><span class="h5 fw-bold text-secondary">$</span>89</div>
+										</div>
+									</div>
+
+									<div class="text-secondary fw-normal fs- pb-2"><i class="fa fa-user-o text-secondary">&nbsp;&nbsp;</i>2 Guests</div>
+									<div class="text-secondary fw-normal fs- pb-2"><i class="fa fa-bell-o text-secondary">&nbsp;&nbsp;</i>King Size</div>
+									<div class="text-secondary fw-normal fs- pb-3"><i class="fa fa-coffee text-secondary">&nbsp;&nbsp;</i>32 m<sup>2</sup></div>
+
+									<p class="mb-1 fw-light lh-1">select rooms</p>
+									<div class="row mt-0">
+										<div class="col">
+											<div class="dropdown">
+												<button class="btn btn-light dropdown-toggle btn-color px-4 mx-auto" type="button" id="selectRoom" data-bs-toggle="dropdown" aria-expanded="false">
+													1
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="selectRoom">
+												  <li><a class="dropdown-item" href="#">1</a></li>
+												  <li><a class="dropdown-item" href="#">2</a></li>
+												  <li><a class="dropdown-item" href="#">3</a></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="col" align="right">
+											<button type="submit" class="btn btn-transparent border-danger btn-lg px-5 py-1 rounded text-uppercase"><span class="fw-normal fs-6">select</span></button>
+										</div>
+									</div>
+								</div>
 							</div>
-
-
+					
 						</div>
-						<div class="tab-pane fade px-5" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
-							Overview
-							<div class="hotel_info_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
-							</div>
 
-							<!-- Hotel Info Tags -->
 
-							<div class="hotel_info_tags">
-								<ul class="hotel_icons_list">
-									<li class="hotel_icons_item"><img src="images/post.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/compass.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/bicycle.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/sailboat.png" alt=""></li>
+
+						<!-- OVERVIEW TAB  -->
+						
+						<div class="tab-pane fade px-5 py-5" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+							
+							<p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
+							
+							<!-- overview icons -->
+
+							<div class="overview-icon">
+								<ul class="list-inline">
+									<li class="list-inline-item"><img src="images/post.png" alt=""></li>
+									<li class="list-inline-item"><img src="images/compass.png" alt=""></li>
+									<li class="list-inline-item"><img src="images/bicycle.png" alt=""></li>
+									<li class="list-inline-item"><img src="images/sailboat.png" alt=""></li>
 								</ul>
 							</div>
 						</div>
+
+
+
+						<!-- OVERVIEW TAB  -->
+
 						<div class="tab-pane fade px-5" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
 
 							<div class="reviews">
-								<div class="reviews_title">reviews</div>
-								<div class="reviews_container">
 	
-									<!-- Review -->
-									<div class="review">
-										<div class="row">
-											<div class="col-lg-1">
-												<div class="review_image">
-													<img src="images/review_1.jpg" alt="https://unsplash.com/@saaout">
-												</div>
-											</div>
-											<div class="col-lg-11 review-padding-left">
-												<div class="review_content">
-													<div class="review_title_container">
-														<div class="review_title">"We loved the services"</div>
-														<div class="review_rating">9.5</div>
-													</div>
-													<div class="review_text">
-														<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-													</div>
-													<div class="review_name">Christinne Smith</div>
-													<div class="review_date">12 November 2017</div>
-												</div>
-											</div>
-										</div>
-									</div>
-	
-									<!-- Review -->
-									<div class="review">
-										<div class="row">
-											<div class="col-lg-1">
-												<div class="review_image">
-													<img src="images/review_2.jpg" alt="Image by Andrew Robles">
-												</div>
-											</div>
-											<div class="col-lg-11 review-padding-left">
-												<div class="review_content">
-													<div class="review_title_container">
-														<div class="review_title">"Nice staff and great location"</div>
-														<div class="review_rating">9.5</div>
-													</div>
-													<div class="review_text">
-														<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-													</div>
-													<div class="review_name">Christinne Smith</div>
-													<div class="review_date">12 November 2017</div>
-												</div>
-											</div>
-										</div>
-									</div>
-	
-								</div>
-							</div>
-						</div>
-					</div>
+								<!-- First Review -->
 
-
-
-				</div>
-
-				<!-- fixed -->
-				<div class="col-md-4 pl-4">
-
-						<div class="bg-light-blue fixed">
-							<div class="pricing_info">
-								<div class="hotel_title_container d-flex flex-lg-row flex-column">
-									<div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
-									<div class="pricing-text">Check-in
-										<div class="pricing-text">31 Aug / 10:00</div>
-										<hr>
-									</div>   
-									<div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
-									<div class="pricing-text">Check-in
-										<div class="pricing-text">31 Aug / 10:00</div>
-										<hr>
-									</div>   
-								</div>
-	
-	
-								<div class="hotel_title_container d-flex flex-lg-row flex-column">
-									<div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
-									<div class="pricing-text">Guests
-										<div class="pricing-text">
-											<p> 2, 1 Room</p>
-											<hr>
-										</div>
-									</div>     
-								</div>
-	
-	
-								<div class="hotel_title_container d-flex flex-lg-row flex-column">
-						  
-									<div class="pricing-text"><b>Standard Room</b>
-										<div class="pricing-text"><p>2, 1</p></div>
-										<div class="pricing-text price-list"><p>Room Price</p><p>60.00</p></div>
-										<div class="pricing-text price-list"><p>Convenience fee</p><p>1</p></div>
-										<br>
-										<div class="pricing-text price-list"><h3><b>Total fee</b></h3><h3><b>$60.00</b></h3></div>
-										<div class="pricing-text"><br><p>Excluding Charges Approx. VAT AED 3 (5%), Tourism Fee AED 15, Property Service Charge AED 6 (10%), Municipality Fee AED 4.2 (7%)</p></div>
-									</div>    
-								</div>
-	
-	
-								<div class="hotel_title_content">
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-								</div>
-							</div>
-
-							<center>
-								<div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
-							</center>
-
-						</div>
-	
-						
-					</div>
-
-			</div>
-
-
-			<div class="row">
-				<div class="col-lg-7">
-					<div class="single_listing">
-						
-						<!-- Hotel Info -->
-
-						<div class="hotel_info">
-
-							<!-- Title -->
-							<div class="hotel_title_container d-flex flex-lg-row flex-column">
-								<div class="hotel_title_content">
-									<h1 class="hotel_title">Grand Hotel Eurostar</h1>
-									<div class="rating_r rating_r_4 hotel_rating">
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-									</div>
-									<div class="hotel_location">345 677 Gran Via Street, no 34, Madrid, Spain</div>
-								</div>
-								<div class="hotel_title_button ml-lg-auto text-lg-right">
-									<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-									<div class="hotel_map_link_container">
-										<div class="hotel_map_link">See Location on Map</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Listing Image -->
-
-							<div class="hotel_image">
-								<img src="images/listing_hotel.jpg" alt="">
-								<div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
-									<div class="hotel_review">
-										<div class="hotel_review_content">
-											<div class="hotel_review_title">very good</div>
-											<div class="hotel_review_subtitle">100 reviews</div>
-										</div>
-										<div class="hotel_review_rating text-center">8.1</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Hotel Gallery -->
-
-							<div class="hotel_gallery">
-								<div class="hotel_slider_container">
-									<div class="owl-carousel owl-theme hotel_slider">
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_1.jpg">
-												<img src="images/listing_thumb_1.jpg" alt="https://unsplash.com/@jbriscoe">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_2.jpg">
-												<img src="images/listing_thumb_2.jpg" alt="https://unsplash.com/@grovemade">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_3.jpg">
-												<img src="images/listing_thumb_3.jpg" alt="https://unsplash.com/@fransaraco">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_4.jpg">
-												<img src="images/listing_thumb_4.jpg" alt="https://unsplash.com/@workweek">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_5.jpg">
-												<img src="images/listing_thumb_5.jpg" alt="https://unsplash.com/@workweek">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_6.jpg">
-												<img src="images/listing_thumb_6.jpg" alt="https://unsplash.com/@avidenov">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_7.jpg">
-												<img src="images/listing_thumb_7.jpg" alt="https://unsplash.com/@pietruszka">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_8.jpg">
-												<img src="images/listing_thumb_8.jpg" alt="https://unsplash.com/@rktkn">
-											</a>
-										</div>
-
-										<!-- Hotel Gallery Slider Item -->
-										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_9.jpg">
-												<img src="images/listing_thumb_9.jpg" alt="https://unsplash.com/@mindaugas">
-											</a>
-										</div>
-									</div>
-
-									<!-- Hotel Slider Nav - Prev -->
-									<div class="hotel_slider_nav hotel_slider_prev">
-										<svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-											<defs>
-												<linearGradient id='hotel_grad_prev'>
-													<stop offset='0%' stop-color='#fa9e1b'/>
-													<stop offset='100%' stop-color='#8d4fff'/>
-												</linearGradient>
-											</defs>
-											<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-											M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-											C22.545,2,26,5.541,26,9.909V23.091z"/>
-											<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-											11.042,18.219 "/>
-										</svg>
-									</div>
-									
-									<!-- Hotel Slider Nav - Next -->
-									<div class="hotel_slider_nav hotel_slider_next">
-										<svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-											<defs>
-												<linearGradient id='hotel_grad_next'>
-													<stop offset='0%' stop-color='#fa9e1b'/>
-													<stop offset='100%' stop-color='#8d4fff'/>
-												</linearGradient>
-											</defs>
-										<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-										M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-										C22.545,2,26,5.541,26,9.909V23.091z"/>
-										<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-										17.046,15.554 "/>
-										</svg>
-									</div>
-
-								</div>
-							</div>
-
-							<!-- Hotel Info Text -->
-
-							<div class="hotel_info_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
-							</div>
-
-							<!-- Hotel Info Tags -->
-
-							<div class="hotel_info_tags">
-								<ul class="hotel_icons_list">
-									<li class="hotel_icons_item"><img src="images/post.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/compass.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/bicycle.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/sailboat.png" alt=""></li>
-								</ul>
-							</div>
-
-						</div>
-						
-						<!-- Rooms -->
-
-						<div class="rooms">
-
-							<!-- Room -->
-							<div class="room">
-
-								<!-- Room -->
-								<div class="row">
-									<div class="col-lg-2">
-										<div class="room_image"><img src="images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
-									</div>
-									<div class="col-lg-7">
-										<div class="room_content">
-											<div class="room_title">Double or Twin Room</div>
-											<div class="room_price">$99/night</div>
-											<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-											<div class="room_extra">Breakfast $7.50</div>
-										</div>
-									</div>
-									<div class="col-lg-3 text-lg-right">
-										<div class="room_button">
-											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-										</div>
-									</div>
-								</div>	
-							</div>
-
-							<!-- Room -->
-							<div class="room">
-
-								<!-- Room -->
-								<div class="row">
-									<div class="col-lg-2">
-										<div class="room_image"><img src="images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
-									</div>
-									<div class="col-lg-7">
-										<div class="room_content">
-											<div class="room_title">Double or Twin Room</div>
-											<div class="room_price">$99/night</div>
-											<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-											<div class="room_extra">Breakfast $7.50</div>
-										</div>
-									</div>
-									<div class="col-lg-3 text-lg-right">
-										<div class="room_button">
-											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-										</div>
-									</div>
-								</div>	
-							</div>
-
-						</div>
-
-						<!-- Reviews -->
-
-						<div class="reviews">
-							<div class="reviews_title">reviews</div>
-							<div class="reviews_container">
-
-								<!-- Review -->
-								<div class="review">
+								<div class="review my-5">
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
 												<img src="images/review_1.jpg" alt="https://unsplash.com/@saaout">
 											</div>
 										</div>
-										<div class="col-lg-11 review-padding-left">
-											<div class="review_content">
-												<div class="review_title_container">
-													<div class="review_title">"We loved the services"</div>
-													<div class="review_rating">9.5</div>
-												</div>
-												<div class="review_text">
-													<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-												</div>
-												<div class="review_name">Christinne Smith</div>
-												<div class="review_date">12 November 2017</div>
-											</div>
+										<div class="col-lg-11 review-content">
+											<h4 class="text-dark fw-bold fst-italic">"We loved the services"</h4>
+											<p class="text-dark">Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
+											<h5 class="text-dark fw-normal mt-4">Christinne Smith</h5>
+											<p class="text-warning">12 November 2017</p>
 										</div>
 									</div>
 								</div>
-
-								<!-- Review -->
-								<div class="review">
+	
+								<!-- Second Review -->
+								
+								<div class="review mb-5">
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
 												<img src="images/review_2.jpg" alt="Image by Andrew Robles">
 											</div>
 										</div>
-										<div class="col-lg-11 review-padding-left">
-											<div class="review_content">
-												<div class="review_title_container">
-													<div class="review_title">"Nice staff and great location"</div>
-													<div class="review_rating">9.5</div>
-												</div>
-												<div class="review_text">
-													<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-												</div>
-												<div class="review_name">Christinne Smith</div>
-												<div class="review_date">12 November 2017</div>
-											</div>
+										<div class="col-lg-11 review-content">
+											<h4 class="text-dark fw-bold fst-italic">"Nice staff and great location"</h4>
+											<p class="text-dark">Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
+											<h5 class="text-dark fw-normal mt-4">Christinne Smith</h5>
+											<p class="text-warning">12 November 2017</p>
 										</div>
 									</div>
 								</div>
+	
+							</div>
+						</div>
+					</div>
 
+
+
+				</div>
+
+
+
+				<!-- fixed -->
+
+				<div class="col-md-4">
+
+					<div class="fixed-section rounded p-5 shadow-sm mb-5">
+
+
+						<div class="row">
+							<div class="col">
+								<div class="text-secondary fw-normal fs-6"><i class="fa fa-calendar fa-lg text-secondary">&nbsp;&nbsp;</i>Check-in</div>
+								<p class="text-secondary fw-light pt-1">08 Sep / 08:00</p>
+								<hr>
+							</div>
+							<div class="col">
+								<div class="text-secondary fw-normal fs-6"><i class="fa fa-calendar fa-lg text-secondary">&nbsp;&nbsp;</i>Check-in</div>
+								<p class="text-secondary fw-light pt-1">08 Sep / 18:00</p>
+								<hr>
 							</div>
 						</div>
 
+
+						<div>
+							<div class="text-secondary fw-normal fs-6 pt-3"><i class="fa fa-user-o fa-lg text-secondary">&nbsp;&nbsp;</i>Check-in</div>
+							<p class="text-secondary fw-light pt-1">2, 1 room</p>
+							<hr>
+						</div>
+
+						<h2 class="text-secondary fw-bold fs-5 pt-3">Presidential Room</h2>
 						
+						<div class="row">
+							<div class="col">
+								<p class="text-secondary fw-normal pt-1">Room Price</p>
+								<p class="text-secondary fw-normal pt-1">Convenience Fee</p>
+								<p class="text-dark fw-bold pt-1 h2">Total</p>
+							</div>
+							<div class="col">
+								<p class="text-secondary fw-normal pt-1" align="right">890</p>
+								<p class="text-secondary fw-normal" align="right">1</p>
+								<div class="text-danger fw-bold pt-1 h1" align="right"><span class="h4 fw-bold text-dark">$</span>890</div>
+							</div>
+							<p class="pt-5 fw-normal lh-base">Excluding Charges Approx. VAT $2.95 (5%), Tourism Fee $15, Property Service Charge $5.9 (10%), Municipality Fee $4.13 (7%)</p>
+							<button type="submit" class="btn btn-danger btn-lg px-5 py-2 mt-3 rounded text-uppercase"><span class="fw-bolder fs-6">complete booking</span></button>
+
+						</div>
+
+
+
+
+							
+
 					</div>
+	
+						
 				</div>
 
-                <div class="col-lg-1"></div>
-
-                <div class="col-lg-4 padding-all bg-light-blue">
-
-                    <div>
-                        <div class="pricing_info">
-                            <div class="hotel_title_container d-flex flex-lg-row flex-column">
-                                <div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
-                                <div class="pricing-text">Check-in
-                                    <div class="pricing-text">31 Aug / 10:00</div>
-                                    <hr>
-                                </div>   
-                                <div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
-                                <div class="pricing-text">Check-in
-                                    <div class="pricing-text">31 Aug / 10:00</div>
-                                    <hr>
-                                </div>   
-                            </div>
-
-
-                            <div class="hotel_title_container d-flex flex-lg-row flex-column">
-                                <div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
-                                <div class="pricing-text">Guests
-                                    <div class="pricing-text">
-                                        <p> 2, 1 Room</p>
-                                        <hr>
-                                    </div>
-                                </div>     
-                            </div>
-
-
-                            <div class="hotel_title_container d-flex flex-lg-row flex-column">
-                      
-                                <div class="pricing-text"><b>Standard Room</b>
-                                    <div class="pricing-text"><p>2, 1</p></div>
-                                    <div class="pricing-text price-list"><p>Room Price</p><p>60.00</p></div>
-                                    <div class="pricing-text price-list"><p>Convenience fee</p><p>1</p></div>
-                                    <br>
-                                    <div class="pricing-text price-list"><h3><b>Total fee</b></h3><h3><b>$60.00</b></h3></div>
-                                    <div class="pricing-text"><br><p>Excluding Charges Approx. VAT AED 3 (5%), Tourism Fee AED 15, Property Service Charge AED 6 (10%), Municipality Fee AED 4.2 (7%)</p></div>
-                                </div>    
-                            </div>
-
-
-                            <div class="hotel_title_content">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <center>
-                            <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
-                        </center>
-                    </div>
-
-                </div>
-
 			</div>
+
+
+			
 		</div>
 
 
@@ -702,63 +319,61 @@
   </div>
 
         <!-- Footer -->
-    
+
         <footer class="footer">
             <div class="container">
                 <div class="row">
-    
-                    <!-- Footer Column -->
-                    <div class="col-lg-3 footer_column">
-                        <div class="footer_col">
-                            <div class="footer_content footer_about">
-                                <div class="logo_container footer_logo">
+
+                    <!-- Footer colunm 1 (image) -->
+                    <div class="col-lg-3">
+                            <div class="footer_about">
+                                <div class="footer_logo">
                                     <div class="logo footer-width"><a href="#"><img src="images/hotbym-logo.png" alt=""></a></div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-    
-                    <!-- Footer Column -->
-                    <div class="col-lg-3 footer_column">
-                        <div class="footer_col">
-                            <div class="footer_title">blog posts</div>
-                            <ul class="footer-list"><a href="about.html">About us</a></ul>
-                            <ul class="footer-list"><a href="contact.html">Contact</a></ul>
-                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
-                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
-                        </div>
                     </div>
                     
-                    <!-- Footer Column -->
-                    <div class="col-lg-3 footer_column">
-                        <div class="footer_col">
-                            <div class="footer_title">Tags</div>
-                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
-                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
-                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
-                            <ul class="footer-list"><a href="#">Lorem Ipsum</a></ul>
-                        </div>
+                    <!-- Footer Column 2 -->
+                    <div class="col-lg-3">
+                        <div class="fw-bold fs-5 text-uppercase text-light">blog posts</div>
+                        <ul class="p-0 footer-list">
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="about.html">About us</a></li>
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="contact.html">Contact</a></li>
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="#">Lorem Ipsum</a></li>
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="#">Lorem Ipsum</a></li>
+                        </ul>
                     </div>
-    
-                    <!-- Footer contact column -->
-                    <div class="col-lg-3 footer_column">
+                    
+                    <!-- Footer Column 3 -->
+                    <div class="col-lg-3">
+                        <div class="fw-bold fs-5 text-uppercase text-light">Tags</div>
+                        <ul class="footer-list p-0">
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="#">Lorem Ipsum</a></li>
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="#">Lorem Ipsum</a></li>
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="#">Lorem Ipsum</a></li>
+                            <li class="fs-6 fw-normal pt-2 footer-text-color"><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Footer contact column 4 -->
+                    <div class="col-lg-3">
                         <div class="footer_col">
-                            <div class="footer_title">contact info</div>
+                            <div class="fw-bold fs-5 text-uppercase text-light">contact info</div>
                             <div class="footer_content footer_contact">
-                                <ul class="contact_info_list">
-                                    <li class="contact_info_item d-flex flex-row">
+                                <ul class="contact_info_list p-0 m-0">
+                                    <li class="contact_info_item d-flex pt-3">
                                         <div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
                                         <div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
                                     </li>
-                                    <li class="contact_info_item d-flex flex-row">
+                                    <li class="contact_info_item d-flex pt-3">
                                         <div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
                                         <div class="contact_info_text">2556-808-8613</div>
                                     </li>
-                                    <li class="contact_info_item d-flex flex-row">
+                                    <li class="contact_info_item d-flex pt-3">
                                         <div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
                                         <div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
                                     </li>
-                                    <li class="contact_info_item d-flex flex-row">
+                                    <li class="contact_info_item d-flex pt-3">
                                         <div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
                                         <div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
                                     </li>
@@ -766,13 +381,13 @@
                             </div>
                         </div>
                     </div>
-    
                 </div>
+                    
             </div>
         </footer>
-    
-        <!-- Copyright -->
-    
+
+	    <!-- Copyright -->
+
         <div class="copyright">
             <div class="container">
                 <div class="copyright_content align-items-center">
