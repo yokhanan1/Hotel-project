@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap5/css/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -49,13 +49,13 @@
 
         <!-- BANNER SECTION -->
 
-        <div class="home">
+        <!-- <div class="home">
             <div class="overlay"></div>
             <div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact_background.jpg"></div>
             <div class="home_content">
                 <div class="home_title">Offers</div>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -63,7 +63,267 @@
 
         <!-- Single Listing -->
 
-		<div class="container">
+		<div class="container-fluid" style="margin-top: 80px; padding: 0px 120px;">
+			<div class="row">
+
+				<!-- main content -->
+				<div class="col-md-8">
+
+					<!-- image grid section -->
+					<div class="image-grid">
+
+						<div class="row">
+							<!-- first two images -->
+							<div class="col-md-6 p-1">
+								<img src="images/listing_hotel.jpg" class="img-fluid">
+							</div>
+							<div class="col-md-6 p-1">
+								<img src="images/listing_hotel.jpg" class="img-fluid">
+							</div>
+							<!-- second set of images -->
+							<div class="col-md-4 p-1">
+								<img src="images/listing_hotel.jpg" class="img-fluid">
+							</div>
+							<div class="col-md-4 p-1">
+								<img src="images/listing_hotel.jpg" class="img-fluid">
+							</div>
+							<div class="col-md-4 p-1">
+								<img src="images/listing_hotel.jpg" class="img-fluid">
+							</div>
+						</div>
+
+					</div>
+
+					<!-- title section -->
+
+					<div class="hotel_title_container p-2">
+						<div class="hotel_title_content">
+							<h1 class="hotel_title">Grand Hotel Eurostar</h1>
+							<div class="row">
+								<div class="rating_r rating_r_4 hotel_rating col">
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+								</div>
+								<div class="col-md-8" align="right"><i class="fa fa-map-marker text-danger"></i> 677 Gran Via Street, no 34, Madrid, Spain.</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- tabs and sections -->
+
+					<nav>
+						<div class="nav nav-tabs" id="nav-tab" role="tablist">
+						  <button class="nav-link active" id="nav-rooms-tab" data-bs-toggle="tab" data-bs-target="#nav-room" type="button" role="tab" aria-controls="nav-room" aria-selected="true">Rooms</button>
+						  <button class="nav-link" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="false">Overview</button>
+						  <button class="nav-link" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review" aria-selected="false">Reviews</button>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active px-5" id="nav-room" role="tabpanel" aria-labelledby="nav-rooms-tab">
+
+							<div class="rooms">
+
+								<!-- Room -->
+								<div class="room">
+	
+									<!-- Room -->
+									<div class="row">
+										<div class="col-lg-2">
+											<div class="room_image"><img src="images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
+										</div>
+										<div class="col-lg-7">
+											<div class="room_content">
+												<div class="room_title">Double or Twin Room</div>
+												<div class="room_price">$99/night</div>
+												<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
+												<div class="room_extra">Breakfast $7.50</div>
+											</div>
+										</div>
+										<div class="col-lg-3 text-lg-right">
+											<div class="room_button">
+												<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
+											</div>
+										</div>
+									</div>	
+								</div>
+
+								<hr />
+	
+								<!-- Room -->
+								<div class="room pt-3">
+	
+									<!-- Room -->
+									<div class="row">
+										<div class="col-lg-2">
+											<div class="room_image"><img src="images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
+										</div>
+										<div class="col-lg-7">
+											<div class="room_content">
+												<div class="room_title">Double or Twin Room</div>
+												<div class="room_price">$99/night</div>
+												<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
+												<div class="room_extra">Breakfast $7.50</div>
+											</div>
+										</div>
+										<div class="col-lg-3 text-lg-right">
+											<div class="room_button">
+												<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
+											</div>
+										</div>
+									</div>	
+								</div>
+	
+							</div>
+
+
+						</div>
+						<div class="tab-pane fade px-5" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+							Overview
+							<div class="hotel_info_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
+							</div>
+
+							<!-- Hotel Info Tags -->
+
+							<div class="hotel_info_tags">
+								<ul class="hotel_icons_list">
+									<li class="hotel_icons_item"><img src="images/post.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="images/compass.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="images/bicycle.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="images/sailboat.png" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-pane fade px-5" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+
+							<div class="reviews">
+								<div class="reviews_title">reviews</div>
+								<div class="reviews_container">
+	
+									<!-- Review -->
+									<div class="review">
+										<div class="row">
+											<div class="col-lg-1">
+												<div class="review_image">
+													<img src="images/review_1.jpg" alt="https://unsplash.com/@saaout">
+												</div>
+											</div>
+											<div class="col-lg-11 review-padding-left">
+												<div class="review_content">
+													<div class="review_title_container">
+														<div class="review_title">"We loved the services"</div>
+														<div class="review_rating">9.5</div>
+													</div>
+													<div class="review_text">
+														<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
+													</div>
+													<div class="review_name">Christinne Smith</div>
+													<div class="review_date">12 November 2017</div>
+												</div>
+											</div>
+										</div>
+									</div>
+	
+									<!-- Review -->
+									<div class="review">
+										<div class="row">
+											<div class="col-lg-1">
+												<div class="review_image">
+													<img src="images/review_2.jpg" alt="Image by Andrew Robles">
+												</div>
+											</div>
+											<div class="col-lg-11 review-padding-left">
+												<div class="review_content">
+													<div class="review_title_container">
+														<div class="review_title">"Nice staff and great location"</div>
+														<div class="review_rating">9.5</div>
+													</div>
+													<div class="review_text">
+														<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
+													</div>
+													<div class="review_name">Christinne Smith</div>
+													<div class="review_date">12 November 2017</div>
+												</div>
+											</div>
+										</div>
+									</div>
+	
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+				<!-- fixed -->
+				<div class="col-md-4 pl-4">
+
+						<div class="bg-light-blue fixed">
+							<div class="pricing_info">
+								<div class="hotel_title_container d-flex flex-lg-row flex-column">
+									<div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div class="pricing-text">Check-in
+										<div class="pricing-text">31 Aug / 10:00</div>
+										<hr>
+									</div>   
+									<div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div class="pricing-text">Check-in
+										<div class="pricing-text">31 Aug / 10:00</div>
+										<hr>
+									</div>   
+								</div>
+	
+	
+								<div class="hotel_title_container d-flex flex-lg-row flex-column">
+									<div><div class="pricing-icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div class="pricing-text">Guests
+										<div class="pricing-text">
+											<p> 2, 1 Room</p>
+											<hr>
+										</div>
+									</div>     
+								</div>
+	
+	
+								<div class="hotel_title_container d-flex flex-lg-row flex-column">
+						  
+									<div class="pricing-text"><b>Standard Room</b>
+										<div class="pricing-text"><p>2, 1</p></div>
+										<div class="pricing-text price-list"><p>Room Price</p><p>60.00</p></div>
+										<div class="pricing-text price-list"><p>Convenience fee</p><p>1</p></div>
+										<br>
+										<div class="pricing-text price-list"><h3><b>Total fee</b></h3><h3><b>$60.00</b></h3></div>
+										<div class="pricing-text"><br><p>Excluding Charges Approx. VAT AED 3 (5%), Tourism Fee AED 15, Property Service Charge AED 6 (10%), Municipality Fee AED 4.2 (7%)</p></div>
+									</div>    
+								</div>
+	
+	
+								<div class="hotel_title_content">
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+								</div>
+							</div>
+
+							<center>
+								<div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
+							</center>
+
+						</div>
+	
+						
+					</div>
+
+			</div>
+
+
 			<div class="row">
 				<div class="col-lg-7">
 					<div class="single_listing">
@@ -416,6 +676,31 @@
 			</div>
 		</div>
 
+
+		<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
         <!-- Footer -->
     
         <footer class="footer">
@@ -502,7 +787,8 @@
         </div>
     </div>
 
-
+	<script src="styles/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
 
 
 
