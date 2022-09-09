@@ -210,27 +210,7 @@ h1, h2, h3, h4, h5, h6
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
-.fill_height
-{
-	height: 100%;
-}
-.super_container
-{
-	width: 100%;
-	overflow: hidden;
-}
-.prlx_parent
-{
-	overflow: hidden;
-}
-.prlx
-{
-	height: 130% !important;
-}
-.nopadding
-{
-	padding: 0px !important;
-}
+
 .button
 {
 	display: inline-block;
@@ -318,14 +298,6 @@ h1, h2, h3, h4, h5, h6
 /*********************************
 3.1 Logo
 *********************************/
-
-.logo a
-{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	color: #f4f4f8;
-	text-transform: uppercase;
-}
 .logo a img
 {
 	width: 90px;
@@ -371,7 +343,7 @@ h1, h2, h3, h4, h5, h6
 
 .slide-content
 {
-	padding: 20px 20px;
+	padding: 200px 200px;
 	background: rgba(0, 0, 0, 0.6);
 	height: 100%;
 	color:white;
