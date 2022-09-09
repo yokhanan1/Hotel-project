@@ -294,29 +294,119 @@
 		</div>
 
 
+
+
+
+
+		<!-- LOGIN MODAL  -->
 		<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			Login
+		</button>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<div class="modal-body p-5 rounded-end shadow-sm">
+
+						<!-- MODAL FORM SECTION -->
+
+
+						<div class="logo mt-2" align="center">
+							<a href="home.html"><img src="images/hotbym-logo.png" alt="" ></a>
+						</div>
+						<form action="#" id="" class="p-5 pt-0">
+
+							<p class="pt-5  text-dark h4 text-center fw-bold">Login</p>
+							<p class="text-center text-dark fw-light">Welcome back! Please enter your details</p>
+							
+							<div class="pb-4">
+								<input type="email" class="form-control placeholder-text border-0 border-bottom" id="email" placeholder="Email Address" required>
+							</div>
+							<div class="pb-4">
+								<input type="password" name="pwd" id="pwd" class="form-control placeholder-text border-0 border-bottom" placeholder="Password" required>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<div class="mb-3 form-check">
+										<input type="checkbox" class="form-check-input" id="rememberMe">
+										<label class="form-check-label text-dark" for="rememberMe">Remember me</label>
+									</div>
+								</div>
+								<div class="col">
+									<a href="#" align="right"><p class="text-primary">Forgot password?</p>
+									</a>
+								</div>
+							</div>
+							<div class="d-grid gap-2 col mx-auto">
+								<button type="submit" class="btn btn-danger btn-lg rounded-pill"><span class="fw-normal fs-6">Sign in</span></button>
+								<button type="submit" class="btn btn-danger btn-lg rounded-pill fw-normal fs-6"><i class="fa fa-google"></i>&nbsp;&nbsp;Sign in with Google</button>
+							</div>
+							<p class="text-secondary text-center pt-4 pb-0">Don't have an account? <a href="#" class="text-primary">  Sign up</a></p>
+						</form>
+
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="modal-body">
-		  ...
+
+
+
+
+
+
+		<!-- SIGN UP MODAL  -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">
+			Sign up
+		</button>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<div class="modal-body p-5 rounded-end shadow-sm">
+					
+
+						<!-- MODAL FORM SECTION -->
+
+							
+						<div class="logo mt-2" align="center">
+							<a href="home.html"><img src="images/hotbym-logo.png" alt=""></a>
+						</div>
+						<form action="#" id="" class="p-5 pt-0">
+
+							<p class="pt-5  text-dark h4 text-center fw-bold">Create an account</p>
+							<p class="text-center text-dark fw-light">Let's get started</p>
+							
+							<div class="pb-4">
+								<input type="text" class="form-control placeholder-text border-0 border-bottom" id="name" placeholder="Name" required>
+							</div>
+							<div class="pb-4">
+								<input type="email" class="form-control placeholder-text border-0 border-bottom" id="email" placeholder="Enter your email" required>
+							</div>
+							<div class="pb-4">
+								<input type="password" name="pwd" id="pwd" class="form-control placeholder-text border-0 border-bottom" placeholder="Password" required>
+							</div>
+							
+							<div class="d-grid gap-2 col mx-auto">
+								<button type="submit" class="btn btn-danger btn-lg rounded-pill"><span class="fw-normal fs-6">Create account</span></button>
+								<button type="submit" class="btn btn-outline-danger btn-lg rounded-pill fw-normal fs-6"><i class="fa fa-google"></i>&nbsp;&nbsp;Sign up with Google</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Save changes</button>
-		</div>
-	  </div>
-	</div>
-  </div>
+
+
+
+
 
         <!-- Footer -->
 

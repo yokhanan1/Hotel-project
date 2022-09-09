@@ -195,12 +195,10 @@ h1, h2, h3, h4, h5, h6
 .room-content
 {
 	border-radius: 0px 17px 17px 0px;
-
 }
 .room-content:hover
 {
 	background-color: #F4FCFF !important;
-
 }
 .btn-color
 {
@@ -229,6 +227,23 @@ h1, h2, h3, h4, h5, h6
 .review-content
 {
 	padding-left: 50px;
+}
+
+
+
+
+
+/*********************************
+8. Footer
+*********************************/
+
+.placeholder-text::placeholder {
+	color: #858585;
+	font-size: small;
+}
+.placeholder-text:focus 
+{
+	font-size: small;
 }
 
 
