@@ -107,6 +107,10 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
+.cursor
+{
+	cursor: pointer;
+}
 
 
 /*********************************
@@ -196,6 +200,10 @@ h1, h2, h3, h4, h5, h6
 {
 	border-radius: 0px 17px 17px 0px;
 }
+.img-content
+{
+	border-radius: 17px 0px 0px 17px;
+}
 .room-content:hover
 {
 	background-color: #F4FCFF !important;
@@ -204,6 +212,22 @@ h1, h2, h3, h4, h5, h6
 {
 	background-color: #dbdbdb;
 	border-radius: 10px;
+}
+
+#background-img-1
+{
+	background: url(/images/room-4.jpg);
+	background-size: cover;
+}
+#background-img-2
+{
+	background: url(/images/room-3.jpg);
+	background-size: cover;
+}
+#background-img-3
+{
+	background: url(/images/room-5.jpg);
+	background-size: cover;
 }
 
 
@@ -245,7 +269,11 @@ h1, h2, h3, h4, h5, h6
 {
 	font-size: small;
 }
-
+/* for password rest  */
+.placeholder-text
+{
+	font-size: small;
+}
 
 
 
