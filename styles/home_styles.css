@@ -284,6 +284,15 @@ h1, h2, h3, h4, h5, h6
 {
 	border: none;
 }
+.card-width
+{
+	width: 18rem;
+}
+
+
+
+
+
 /*********************************
 3. Header
 *********************************/
@@ -293,6 +302,10 @@ h1, h2, h3, h4, h5, h6
 	position: fixed;
 	width: 100%;
 	z-index: 12;
+}
+.nav-bar
+{
+	height: 60px;
 }
 
 /*********************************
@@ -347,6 +360,10 @@ h1, h2, h3, h4, h5, h6
 	background: rgba(0, 0, 0, 0.6);
 	height: 100%;
 	color:white;
+}
+.toggle-section
+{
+	margin-top: -250px;
 }
 
 
@@ -413,7 +430,10 @@ h1, h2, h3, h4, h5, h6
 	}
 }
 
-
+.cheapest-hotel
+{
+	background-color: #e0e8ff33;
+}
 
 
 
@@ -434,6 +454,15 @@ h1, h2, h3, h4, h5, h6
 .cta-text
 {
 	font-weight: 800;
+}
+.cta-contained
+{
+	background-image:url(/images/cta.jpg);
+	border-radius: 30px;
+}
+.cta-btn
+{
+	margin: -120px 400px 0px 0px;
 }
 
 
@@ -458,54 +487,13 @@ h1, h2, h3, h4, h5, h6
 {
 	width: 150px;
 }
-
-
-/*********************************
-7.1 Footer - About
-*********************************/
-
-.footer_about
+.footer-logo
 {
 	padding-top: 67px;
-}
-
-.footer_about_text
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #FFFFFF;
 }
 .footer-list a:hover
 {
 	color: #fa9e1c;
-}
-
-
-
-/*********************************
-7.2 Footer - Contact Info
-*********************************/
-
-.contact_info_icon
-{
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-}
-.contact_info_icon img
-{
-	display: block;
-	width: 100%;
-}
-.contact_info_text,
-.contact_info_text a
-{
-	color: #FFFFFF;
-}
-.contact_info_item:hover .contact_info_text,
-.contact_info_item:hover .contact_info_text a
-{
-	color: #fa9e1b;
 }
 
 

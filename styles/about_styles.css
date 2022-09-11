@@ -7,13 +7,12 @@
 
 1. Fonts
 2. Body and some general stuff
-3. Logo
+3. Header
+	3.1 Logo
 4. Banner section
 4. Banner section
 4. About section
 6. Footer
-	6.1 Footer - About
-	6.2 Footer - Contact Info
 7. Copyright
 
 
@@ -107,7 +106,27 @@ h1, h2, h3, h4, h5, h6
 
 
 /*********************************
-3 Logo
+3. Header
+*********************************/
+
+.header
+{
+	position: fixed;
+	width: 100%;
+	z-index: 12;
+}
+.nav-bar
+{
+	height: 60px;
+}
+
+
+
+
+
+
+/*********************************
+3.1 Logo
 *********************************/
 
 .logo a img
@@ -182,57 +201,13 @@ h1, h2, h3, h4, h5, h6
 {
 	width: 150px;
 }
-
-
-
-
-
-/*********************************
-6.1 Footer - About
-*********************************/
-
-.footer_about
+.footer-logo
 {
 	padding-top: 67px;
-}
-
-.footer_about_text
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #FFFFFF;
 }
 .footer-list a:hover
 {
 	color: #fa9e1c;
-}
-
-
-
-/*********************************
-6.2 Footer - Contact Info
-*********************************/
-
-.contact_info_icon
-{
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-}
-.contact_info_icon img
-{
-	display: block;
-	width: 100%;
-}
-.contact_info_text,
-.contact_info_text a
-{
-	color: #FFFFFF;
-}
-.contact_info_item:hover .contact_info_text,
-.contact_info_item:hover .contact_info_text a
-{
-	color: #fa9e1b;
 }
 
 

@@ -8,23 +8,12 @@
 1. Fonts
 2. Body and some general stuff
 3. Header
-	3.1 Top Bar
-	3.2 Logo
-	3.3 Main Nav
-	3.4 Menu
-4. Home
-	4.1 Home Slider
-	4.2 Home Slider Nav
-	4.3 Home Slider Dots
-5. Contact Form Section
-6. About
-7. Travelix Map
-8. Footer
-	8.1 Footer - About
-	8.2 Footer - Blog
-	8.3 Footer - Tags
-	8.4 Footer - Contact Info
-9. Copyright
+	3.1 Logo
+4. Banner section
+5. Contact section
+6. About section
+7. Footer
+8. Copyright
 
 
 ******************************/
@@ -199,9 +188,27 @@ h1, h2, h3, h4, h5, h6
 
 
 
+/*********************************
+3. Header
+*********************************/
+
+.header
+{
+	position: fixed;
+	width: 100%;
+	z-index: 12;
+}
+.nav-bar
+{
+	height: 60px;
+}
+
+
+
+
 
 /*********************************
-3 Logo
+3.1 Logo
 *********************************/
 
 .logo a img
@@ -331,7 +338,7 @@ h1, h2, h3, h4, h5, h6
 
 
 /*********************************
-8. Footer
+7. Footer
 *********************************/
 
 .footer
@@ -349,25 +356,9 @@ h1, h2, h3, h4, h5, h6
 {
 	width: 150px;
 }
-
-
-
-
-
-/*********************************
-8.1 Footer - About
-*********************************/
-
-.footer_about
+.footer-logo
 {
 	padding-top: 67px;
-}
-
-.footer_about_text
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #FFFFFF;
 }
 .footer-list a:hover
 {
@@ -376,38 +367,10 @@ h1, h2, h3, h4, h5, h6
 
 
 
-/*********************************
-8.2 Footer - Contact Info
-*********************************/
-
-.contact_info_icon
-{
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-}
-.contact_info_icon img
-{
-	display: block;
-	width: 100%;
-}
-.contact_info_text,
-.contact_info_text a
-{
-	color: #FFFFFF;
-}
-.contact_info_item:hover .contact_info_text,
-.contact_info_item:hover .contact_info_text a
-{
-	color: #fa9e1b;
-}
-
-
-
 
 
 /*********************************
-9. Copyright
+8. Copyright
 *********************************/
 
 .copyright

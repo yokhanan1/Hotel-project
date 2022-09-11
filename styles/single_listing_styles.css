@@ -8,13 +8,12 @@
 1. Fonts
 2. Body and some general stuff
 3. Nav/Tab link
-4. Logo
+4. Header
+	4.1 Logo
 5. Single Listing
 6. Rooms
 7. Reviews
 8. Footer
-	8.1 Footer - Contact Info
-	8.2 Footer - About
 9. Copyright
 
 
@@ -135,7 +134,26 @@ h1, h2, h3, h4, h5, h6
 
 
 /*********************************
-4. Logo
+4. Header
+*********************************/
+
+.header
+{
+	/* position: fixed; */
+	width: 100%;
+	z-index: 12;
+}
+.nav-bar
+{
+	height: 60px;
+}
+
+
+
+
+
+/*********************************
+4.1 Logo
 *********************************/
 
 .logo a
@@ -297,57 +315,13 @@ h1, h2, h3, h4, h5, h6
 {
 	width: 150px;
 }
-
-
-
-
-
-/*********************************
-8.1 Footer - About
-*********************************/
-
-.footer_about
+.footer-logo
 {
 	padding-top: 67px;
-}
-
-.footer_about_text
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #FFFFFF;
 }
 .footer-list a:hover
 {
 	color: #fa9e1c;
-}
-
-
-
-/*********************************
-8.2 Footer - Contact Info
-*********************************/
-
-.contact_info_icon
-{
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-}
-.contact_info_icon img
-{
-	display: block;
-	width: 100%;
-}
-.contact_info_text,
-.contact_info_text a
-{
-	color: #FFFFFF;
-}
-.contact_info_item:hover .contact_info_text,
-.contact_info_item:hover .contact_info_text a
-{
-	color: #fa9e1b;
 }
 
 
