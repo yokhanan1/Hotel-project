@@ -378,8 +378,8 @@ h1, h2, h3, h4, h5, h6
 	margin-top: 30px;
 }
 .post-slide{
-	background: #fff;
-	margin: 20px 15px 20px;
+	/* background: #fff; */
+	margin: 20px 15px 20px 0px;
 	border-radius: 27px;
 	padding-top: 1px;
 }
@@ -402,12 +402,12 @@ h1, h2, h3, h4, h5, h6
 
 .owl-controls .owl-buttons{
 	text-align:center;
-	margin-top:20px;
+	margin-top: 0px;
 }
 .owl-controls .owl-buttons .owl-next{
 	background: #fff;
 	position: absolute;
-	top:-13%;
+	top: -326px;
 	right: 15px;
 	padding: 0 15px 0 18px;
 	border-radius: 50px;
